@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { View } from 'react-native';
 import firebase from 'firebase';
-import { Button, Header, Spinner } from './components/common';
-import LoginForm from './components/authApp/LoginForm';
+import { Button, Header, Spinner } from './commonComponents';
+import LoginForm from './authApp/components/LoginForm';
 
 class AuthApp extends Component {
   state = { loggedIn: null }
