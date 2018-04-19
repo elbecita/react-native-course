@@ -6,5 +6,5 @@ import SelectionReducer from './SelectionReducer';
 // they produce
 export default combineReducers({
   libraries: LibraryReducer,
-  selectedLibrary: SelectionReducer
+  selectedLibraryId: SelectionReducer
 });
