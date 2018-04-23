@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import firebase from 'firebase';
 import reducers from './manageApp/reducers';
+import LoginForm from './manageApp/components/LoginForm';
 
 class ManageApp extends Component {
   componentWillMount() {
@@ -20,11 +21,7 @@ class ManageApp extends Component {
   render() {
     return (
       <Provider store={createStore(reducers)}>
-        <View>
-          <Text>
-            Hello!
-          </Text>
-        </View>
+        <LoginForm />
       </Provider>
     );
   }
